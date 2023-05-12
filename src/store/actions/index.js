@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const getNewsItemsHelper = async () => {
 	try {
-		const response = await axios.get('/api/news');
+		const response = await axios.get('https://newswire-server-2fu8.onrender.com/api/news');
 		return {
 			news: response.data
 		};
@@ -13,7 +13,7 @@ const getNewsItemsHelper = async () => {
 
 const getNewsItemByIdHelper = async (id) => {
 	try {
-		const response = await axios.get(`/api/news/${id}`);
+		const response = await axios.get(`https://newswire-server-2fu8.onrender.com/api/news/${id}`);
 		return {
 			newsItem: response.data
 		};

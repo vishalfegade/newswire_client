@@ -23,7 +23,7 @@ const ShowNews = () => {
 
 	const deleteNews = async () => {
 		try {
-			const response = await axios.delete(`/api/news/${id}`);
+		const response = await axios.delete(`https://newswire-server-2fu8.onrender.com/api/news/${id}`);
 			showToast('success', 'successfully deleted news post');
 			navigate('/');
 		} catch (error) {

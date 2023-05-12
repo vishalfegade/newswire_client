@@ -34,7 +34,7 @@ const EditNews = () => {
 
 	const editNews = async (values) => {
 		try {
-			const response = await axios.patch(`/api/news/${id}`, {
+		const response = await axios.patch(`https://newswire-server-2fu8.onrender.com/api/news/${id}`, {
 				title: values.title,
 				body: values.body,
 				author: values.author

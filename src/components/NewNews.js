@@ -12,7 +12,7 @@ const NewNews = () => {
 
 	const addNewsToDB = async (values) => {
 		try {
-			const response = await axios.post('/api/news', {
+			const response = await axios.post('https://newswire-server-2fu8.onrender.com/api/news', {
 				title: values.title,
 				body: values.body,
 				author: values.author
